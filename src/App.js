@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import NavbarComp from "./components/NavbarComp";
 import FooterComp from "./components/FooterComp";
 import { ParseExcel } from "./components/ParseExcel";
+import { Upload } from "./components/Upload";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/parse" element={<ParseExcel />} />
+        <Route path="/upload" element={<Upload />} />
       </Routes>
 
       <div>
