@@ -21,7 +21,7 @@ export const Upload = () => {
     formData.append("file", file);
 
     try {
-      const res = await axios.post("/uploadfile", formData, {
+      const res = await axios.post("/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -51,8 +51,12 @@ export const Upload = () => {
 
   return (
     <Fragment>
-      {message ? <Message msg={message} /> : null}
       <div className="container mt-4">
+        <h4 className="display-4 text-center mb-4">
+          <i className="fab fa-react" /> React File Upload
+        </h4>
+
+        {message ? <Message msg={message} /> : null}
         <form onSubmit={onSubmit}>
           <div className="custom-file mb-4">
             <input
@@ -65,6 +69,7 @@ export const Upload = () => {
               {filename}
             </label>
           </div>
+
           <Progress percentage={uploadPercentage} />
 
           <input
@@ -76,7 +81,7 @@ export const Upload = () => {
         {uploadedFile ? (
           <div className="row mt-5">
             <div className="col-md-6 m-auto">
-              <h3 className="text-center"> {uploadedFile.fileName}</h3>
+              <h3 className="text-center">{uploadedFile.fileName}</h3>
               <img
                 style={{ width: "100%" }}
                 src={uploadedFile.filePath}
