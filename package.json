@@ -1,0 +1,31 @@
+{
+  "name": "resumeparser",
+  "version": "1.0.0",
+  "description": "![ezgif-3-b99fa1f37b](https://user-images.githubusercontent.com/55722392/178073146-50998a2a-d78f-4ea8-a122-7bfd84ce50ed.gif)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohimjosh/resumeParser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohimjosh/resumeParser/issues"
+  },
+  "homepage": "https://github.com/ohimjosh/resumeParser#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19"
+  }
+}
