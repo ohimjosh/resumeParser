@@ -8,6 +8,7 @@ export const Upload = () => {
   const [filename, setFilename] = useState("Choose File");
   const [uploadedFile, setUploadedFile] = useState({});
   const [message, setMessage] = useState("");
+  const [parse, setParse] = useState("");
   const [uploadPercentage, setUploadPercentage] = useState(0);
 
   const onChange = (e) => {
@@ -49,6 +50,7 @@ export const Upload = () => {
     }
   };
 
+
   return (
     <Fragment>
       <div className="container mt-4">
@@ -87,6 +89,7 @@ export const Upload = () => {
                 src={uploadedFile.filePath}
                 alt=""
               />
+              
             </div>
           </div>
         ) : null}
