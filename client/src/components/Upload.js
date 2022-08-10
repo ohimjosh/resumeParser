@@ -53,7 +53,7 @@ export const Upload = () => {
     <Fragment>
       <div className="container mt-4">
         <h4 className="display-4 text-center mb-4">
-          <i className="fab fa-react" /> React File Upload
+          <i className="fa-solid fa-file-arrow-up" /> File Upload
         </h4>
 
         {message ? <Message msg={message} /> : null}
