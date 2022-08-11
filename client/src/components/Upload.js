@@ -3,12 +3,12 @@ import axios from "axios";
 import Message from "./Message";
 import Progress from "./Progress";
 
+
 export const Upload = () => {
   const [file, setFile] = useState("");
   const [filename, setFilename] = useState("Choose File");
   const [uploadedFile, setUploadedFile] = useState({});
   const [message, setMessage] = useState("");
-  const [parse, setParse] = useState("");
   const [uploadPercentage, setUploadPercentage] = useState(0);
 
   const onChange = (e) => {
@@ -89,7 +89,6 @@ export const Upload = () => {
                 src={uploadedFile.filePath}
                 alt=""
               />
-              
             </div>
           </div>
         ) : null}
