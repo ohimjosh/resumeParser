@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export const FetchJobs = (params, page) => {
-  return (
-    <div>FetchJobs</div>
-  )
-}
+  return {
+    jobs: [],
+    loading: false,
+    error: false
+  };
+};

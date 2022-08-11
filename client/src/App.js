@@ -8,7 +8,7 @@ import NavbarComp from "./components/NavbarComp";
 import FooterComp from "./components/FooterComp";
 import { ParseExcel } from "./components/ParseExcel";
 import { Upload } from "./components/Upload";
-import { FetchJobs } from "./components/FetchJobs";
+import { JobListing } from "./components/JobListing";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/parse" element={<ParseExcel />} />
         <Route path="/upload" element={<Upload />} />
-        <Route path="/jobs" element={<FetchJobs />} />
+        <Route path="/jobs" element={<JobListing />} />
       </Routes>
 
       <div>
