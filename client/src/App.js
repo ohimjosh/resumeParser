@@ -6,9 +6,9 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import NavbarComp from "./components/NavbarComp";
 import FooterComp from "./components/FooterComp";
+import Login from "./components/Login";
 import { ParseExcel } from "./components/ParseExcel";
 import { Upload } from "./components/Upload";
-import { JobListing } from "./components/JobListing";
 
 function App() {
   return (
@@ -19,11 +19,11 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />}/>
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/parse" element={<ParseExcel />} />
         <Route path="/upload" element={<Upload />} />
-        <Route path="/jobs" element={<JobListing />} />
       </Routes>
 
       <div>
