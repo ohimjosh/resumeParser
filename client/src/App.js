@@ -10,6 +10,7 @@ import Login from "./components/Login";
 import { ParseExcel } from "./components/ParseExcel";
 import { Upload } from "./components/Upload";
 import { JobListing } from "./components/JobListing";
+import RecruiterSearch from "./components/RecruiterSearch";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <Route path="/parse" element={<ParseExcel />} />
         <Route path="/upload" element={<Upload />} />
         <Route path="/jobs" element={<JobListing />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/recruitersearch" element={<RecruiterSearch />} />
       </Routes>
 
       <div>
