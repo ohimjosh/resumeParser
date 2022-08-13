@@ -20,6 +20,7 @@ const NavbarComp = () => (
           <Nav.Link as={Link} to="/parse">Parse</Nav.Link>
           <Nav.Link as={Link} to="/upload">Upload</Nav.Link>
           <Nav.Link as={Link} to="/jobs">Jobs</Nav.Link>
+          <Nav.Link as={Link} to="/login">Login</Nav.Link>
 
         </Nav>
       </Navbar.Collapse>

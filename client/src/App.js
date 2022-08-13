@@ -26,6 +26,7 @@ function App() {
         <Route path="/parse" element={<ParseExcel />} />
         <Route path="/upload" element={<Upload />} />
         <Route path="/jobs" element={<JobListing />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
 
       <div>
