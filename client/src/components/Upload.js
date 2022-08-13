@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import axios from "axios";
 import Message from "./Message";
 import Progress from "./Progress";
+import "../styles/Upload.css";
 
 
 export const Upload = () => {
@@ -53,7 +54,7 @@ export const Upload = () => {
 
   return (
     <Fragment>
-      <div className="container mt-4">
+      <div className="container mt-5">
         <h4 className="display-4 text-center mb-4">
           <i className="fa-solid fa-file-arrow-up" /> File Upload
         </h4>
